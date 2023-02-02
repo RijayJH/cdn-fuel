@@ -277,3 +277,4 @@ Future Plans are located on the [Wiki Section](https://github.com/CodineDev/cdn-
 
 Massive shoutout once again to the team at [Project Sloth](https://github.com/Project-Sloth)! <br><br> They create super sick scripts that have changed the game when it comes to fivem server development.
 This script is based off of their [ps-fuel script](https://github.com/Project-Sloth/ps-fuel).
+Special thanks to Codine Dev.
