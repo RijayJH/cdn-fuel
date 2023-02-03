@@ -69,34 +69,6 @@ You can follow this GIF to better understand how to install the items:
 <br>
 ![Step4GIF](https://i.imgur.com/Oiy7X5W.gif)
 <br>
-Now, we need to format item data in our inventory. Firstly, find the *app.js* located at *inventoryname/html/js/app.js*.
-<br> <br>
-Now we will CTRL+F the following line:
-<br> 
-```
-} else if (itemData.name == "harness") {
-```
-Once you have found this line, copy the following one line above it:
-<br> 
-```
-        } else if (itemData.name == "syphoningkit") { // Syphoning Kit (CDN-Fuel or CDN-Syphoning!)
-            $(".item-info-title").html("<p>" + itemData.label + "</p>");
-            $(".item-info-description").html(
-                "<p>" + "A kit used to syphon gasoline from vehicles! <br><br>" + itemData.info.gasamount + " Liters Inside.</p>" +
-                "</span></p><p style=\"padding-top: .8vh;font-size:11px\"><b>Weight: </b>" + ((itemData.weight * itemData.amount) / 1000).toFixed(1) + " | <b>Amount: </b> " + itemData.amount
-            );
-        } else if (itemData.name == "jerrycan") { // Jerry Can (CDN-Fuel!)
-            $(".item-info-title").html("<p>" + itemData.label + "</p>");
-            $(".item-info-description").html(
-                "<p>" + "A Jerry Can, designed to hold fuel! <br><br>" + itemData.info.gasamount + " Liters Inside.</p>" +
-                "</span></p><p style=\"padding-top: .8vh;font-size:11px\"><b>Weight: </b>" + ((itemData.weight * itemData.amount) / 1000).toFixed(1) + " | <b>Amount: </b> " + itemData.amount
-            );
-```
-**Again, if you have decay, you must add in the options yourself!**
-<br> <br>
-*Here is a GIF to better understand how to install the "jerrycan" and "syphoningkit" in the app.js*
-<br>
-![Step4JSGIF](https://i.imgur.com/lKq9WDR.gif)
 <br> <br>
 Next, we'll add the item's images into our Inventory resource. This is a simple process.
 <br> <br> 
