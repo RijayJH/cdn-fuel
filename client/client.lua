@@ -17,14 +17,15 @@ local props = {
 local refueling = false
 local PaidForFuel = false
 
-AddEventHandler('onResourceStart', function(resource)
-	if GetResourceState('ox_inventory'):match("start") then
+AddEventHandler("QBCore:Client:OnPlayerLoaded", function()
+    if GetResourceState('ox_inventory'):match("start") then
         exports.ox_inventory:displayMetadata({
-            cdn_fuel = "Fuel",
-			cdn_syphon = "Syphon",
+        	cdn_fuel = "Fuel",
+		cdn_syphon = "Syphon"
         })
     end
 end)
+
 -- Debug ---
 if Config.FuelDebug then
 	RegisterCommand('setfuel0', function()
